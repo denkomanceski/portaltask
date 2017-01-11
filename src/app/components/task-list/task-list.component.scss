@@ -1,0 +1,64 @@
+.menu-sidebar {
+ul.left-menu {
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+.divider {
+    height: 0px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+ul {
+    padding: 8px 0;
+}
+li {
+
+span.icon {
+    border-radius: 2px;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 16px;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    float: left;
+    margin-top: -1px;
+}
+span {
+    display: inline-block;
+}
+}
+&.nav-separator {
+     height: 1px;
+     margin: 0px 10px;
+     border-bottom: 1px solid #56b1ea;
+ }
+}
+}
+a {
+    display: block;
+    padding: 10px 10px;
+    position: relative;
+    font-size: 16px;
+    transition-duration: 300ms;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+a:hover {
+    background-color:#56B1EA ;
+    cursor: pointer;
+}
+li {
+    color: white;
+    cursor: pointer;
+    list-style-type: none;
+}
+li:hover{
+    background-color: #56B1EA;
+}
+
+

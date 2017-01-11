@@ -1,0 +1,15 @@
+<a (click)="toggleList()">Tasks</a>
+<ul *ngIf="randomVar" lass="left-menu">
+    <input [(ngModel)]="myInput"/>
+    <input type="checkbox" [(ngModel)]='myAssignee'>
+
+    <li *ngFor="let list of lists | filter:myInput:['name'] | filterByAssigned:myAssignee:'assignee':'demo'"
+        (click)="sendTask(list)">
+        <span>{{list.name}}</span>
+
+        <button (click)="claimTask(list)" >{{list.assignee==null?"Claim":"Unclaim"}}</button>
+        <!--<button (click)="unclaimTask()"></button>-->
+    </li>
+</ul>
+
+
